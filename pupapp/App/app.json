@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Pups",
+    "slug": "Pups",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/animations",
+    "splash": {
+      "image": "./app/assets/animations",
+      "resizeMode": "cover",
+      "backgroundColor": "#00b373"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.codewithmosh.donewithit",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.codewithmosh.donewithit",
+      "versionCode": 1
+    },
+    "description": "A social place for puppies using people stuff",
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "1f89967da16ead7f99e7a2ad11c8f9ac"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
